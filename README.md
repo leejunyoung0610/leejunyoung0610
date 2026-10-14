@@ -14,7 +14,7 @@
 - FastAPI · PostgreSQL/PostGIS · SQLAlchemy(async) · Next.js · GitHub Actions
 
 **🐾 [GANADI](https://github.com/leejunyoung0610/capstone_petcare) — 반려동물 안구질환 AI 스크리닝** · 캡스톤 4인 팀 팀장
-- 모델이 질환 대신 촬영 기기 특징으로 판별하는 **지름길 학습**을 찾아내고 판별 헤드를 바꿔 Top-1 **27.25% → 53.77%**, Top-3 **51.65% → 84.35%** (검증 데이터 기준).
+- 모델이 질환 대신 촬영 기기 특징으로 판별하는 **지름길 학습**을 찾아내고, 판별 헤드를 바꾼 실험에서 Top-1 **27.25% → 53.77%**, Top-3 **51.65% → 84.35%** (검증 데이터 기준 오프라인 평가).
 - ONNX 변환으로 CPU 추론 **443ms → 38ms(11.6배)**, INT8 양자화로 모델 **214MB → 18MB**.
 - EfficientNet-B3 · FastAPI · React · MySQL · AWS
 
