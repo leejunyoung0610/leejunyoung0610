@@ -20,7 +20,7 @@
 
 **🌍 [Living World Engine](https://github.com/leejunyoung0610/living-world-engine) — LLM 출력 검증·비용 통제 백엔드 (AI 대화형 RPG)** · 1인 풀스택
 - "LLM은 상태를 제안하고, 시스템이 검증한다": LLM이 제안한 상태 변경은 검증기(변화량 상한·변경 사유 필수)를 통과한 것만 반영합니다.
-- 턴별 토큰·비용 기록, 일일 비용 경보, 턴 할당량, Alembic 마이그레이션, Sentry · LLM을 목(mock)으로 대체한 테스트 300개 이상.
+- 턴별 토큰·비용 기록, 일일 비용 경보, 동시 요청에도 원자적으로 차감되는 턴 할당량, API 호출 제한, Sentry · LLM을 목(mock)으로 대체한 테스트 382개.
 - FastAPI · PostgreSQL · Docker · React/TypeScript · Claude Tool Use
 
 **🎓 [ABEEK 자동 판정 시스템](https://github.com/leejunyoung0610/sejonghackathon) — 공학인증 졸업요건** · 세종대 해커톤 5인 팀
