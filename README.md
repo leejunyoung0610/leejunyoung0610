@@ -18,9 +18,9 @@
 - ONNX 변환으로 CPU 추론 **443ms → 38ms(11.6배)**, INT8 양자화로 모델 **214MB → 18MB**.
 - EfficientNet-B3 · FastAPI · React · MySQL · AWS
 
-**[Living World Engine](https://github.com/leejunyoung0610/living-world-engine) — LLM 출력 검증·비용 통제 백엔드 (AI 대화형 RPG)** · 1인 풀스택
+**[Living World Engine](https://github.com/leejunyoung0610/living-world-engine) — AI 대화형 RPG 플랫폼** · 1인 풀스택
 - "LLM은 상태를 제안하고, 시스템이 검증한다": LLM이 제안한 상태 변경은 검증기(변화량 상한·변경 사유 필수)를 통과한 것만 반영합니다.
-- 턴별 토큰·비용 기록, 일일 비용 경보, 동시 요청에도 원자적으로 차감되는 턴 할당량, API 호출 제한, Sentry · LLM을 목(mock)으로 대체한 테스트 382개.
+- 턴별 토큰·비용 기록, 일일 비용 경보, 동시 요청에도 원자적으로 차감되는 턴 할당량, API 호출 제한, Sentry · LLM을 목(mock)으로 대체한 pytest 테스트 382개.
 - FastAPI · PostgreSQL · Docker · React/TypeScript · Claude Tool Use
 
 **[ABEEK 자동 판정 시스템](https://github.com/leejunyoung0610/sejonghackathon) — 공학인증 졸업요건** · 세종대 해커톤 5인 팀
@@ -32,7 +32,7 @@
 #### 일하는 방식
 - **만들기 전에 데이터로 판단합니다.** 가게내비는 코드를 쓰기 전에 공공데이터로 "이 서비스가 의미 있는 숫자를 줄 수 있는가"부터 확인했습니다.
 - **틀린 값보다 빈 값.** 모르는 값은 추측해서 채우지 않고, 사용자에게 보이는 부정적 표시는 근거가 강한 것만 냅니다.
-- **AI 에이전트와 일해도 판단은 직접.** 구현은 AI 코딩 에이전트와 나누되, 범위·판단 기준·검증·머지는 제가 맡고 모든 결정을 기록으로 남깁니다.
+- **AI 에이전트와 일해도 판단은 직접.** 구현은 AI 코딩 에이전트와 나누되, 범위·판단 기준·검증·머지는 제가 맡고 결정은 ADR과 커밋 기록으로 남깁니다.
 
 #### Tech
 - 주력: `Python` `FastAPI` `SQLAlchemy` `PostgreSQL/PostGIS` `pandas`
